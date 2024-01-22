@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <title>JavaScript addEventListener() Hands-On</title>
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f4f4f4;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+            }
+    
+            h1 {
+                color: #333;
+                margin-top: 50px;
+            }
+    
+            button {
+                padding: 10px 20px;
+                margin: 10px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+    
+            button:hover {
+                background-color: #a04545;
+                transform: translateY(-3px);
+                transition: transform 0.2s ease;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>JavaScript addEventListener() Hands-On</h1>
+    
+        <button id="button1">Button 1</button>
+        <button id="button2">Button 2</button>
+        <button id="button3">Button 3</button>
+    
+        <script>
+            function button1Clicked() {
+                alert("Great! Button 1 was clicked, try the other buttons.");
+            }
+    
+            function button2Clicked() {
+                alert("Nice! Button 2 was clicked, try the other buttons.");
+            }
+    
+            function button3Clicked() {
+                alert("Awesome! Button 3 was clicked, try the other buttons.");
+            }
+    
+            document.getElementById("button1").addEventListener("click", button1Clicked);
+            document.getElementById("button2").addEventListener("click", button2Clicked);
+            document.getElementById("button3").addEventListener("click", button3Clicked);
+        </script>
+    
+    </body>
+    </html>
